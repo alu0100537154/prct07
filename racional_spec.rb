@@ -1,12 +1,10 @@
-#!/usr/bin/env ruby 
-
-
-
+#require File.join(File.dirname(__FILE__))
 require "./fraccion.rb"
 
-describe Fraccion do
+ 
+ describe Fraccion do
 	before :each do
-    @f1 = Fraccion.new(3,2)
+        @f1 = Fraccion.new(3,2)
 
  end 
 
