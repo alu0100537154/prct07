@@ -114,16 +114,16 @@ class Fraccion
         end
 
         #menor mayor igual
-        def <=>(n,m)
-                aux = Integer(mcm(@denominador,m))
+        def <=>(other)
+                aux = Integer(mcm(@denominador,other.denominador))
                 a =  (@numerador * (aux / @denominador))
-                b = (n * (aux / m))
+                b = (other.numerador * (aux / other.denominador))
                 #menor o mayor
                 if a < b
+                        return -1
+                
+                elsif a > b
                         return 1
-                end
-                if a > b
-                        return 2
                 else
                         return 0
                 end

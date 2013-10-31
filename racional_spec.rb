@@ -53,9 +53,22 @@ require "./fraccion.rb"
 			@f1.resto.should eq("1")
 		end
 	
-		#it "comparar" do
-			#@f1.comparacion(5,2).should eq(2)
-		#end
+		it "comparar" do
+			@f2 = Fraccion.new(5,2)
+			@f3 = Fraccion.new(1,2)
+			@f1.<(@f2).should be true
+			@f1.<(@f3).should be false
+			@f1.==(@f2).should be false
+			@f1.==(@f3).should be false
+			@f1.>(@f2).should be false
+			@f1.>(@f2).should be false
+			@f1.<=(@f2).should be true
+			@f1.<=(@f3).should be false
+			@f1.>=(@f2).should be false
+			@f1.>=(@f3).should be true
+
+		
+		end
 	end
 	
 	describe "Operadores aritmeticos" do
