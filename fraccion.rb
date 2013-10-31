@@ -1,4 +1,4 @@
-require "./mcm.rb"
+require File.join(File.dirname(__FILE__), 'mcm.rb')
 
 
 class Fraccion
