@@ -53,9 +53,9 @@ require "./fraccion.rb"
 			@f1.resto.should eq("1")
 		end
 	
-		it "comparar" do
+		#it "comparar" do
 			#@f1.comparacion(5,2).should eq(2)
-		end
+		#end
 	end
 	
 	describe "Operadores aritmeticos" do
